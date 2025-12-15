@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://humanresourcesupport.github.io/Jobs/sitemap.xml
