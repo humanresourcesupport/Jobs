@@ -1,0 +1,145 @@
+/* =====================================================
+   GLOBAL RESET & BASE
+===================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000;
+  color: #f1f1f1;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* =====================================================
+   TYPOGRAPHY
+===================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+
+p, li {
+  font-size: 16px;
+  color: #cccccc;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.85;
+}
+
+/* =====================================================
+   LAYOUT
+===================================================== */
+
+header img {
+  display: block;
+  margin: 0 auto 16px;
+}
+
+header h1 {
+  font-size: 42px;
+  margin-bottom: 8px;
+}
+
+header p {
+  font-size: 18px;
+  color: #aaaaaa;
+}
+
+/* =====================================================
+   SECTIONS
+===================================================== */
+
+section {
+  margin-bottom: 64px;
+}
+
+section h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #444;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+section ul {
+  padding-left: 20px;
+}
+
+section ul li {
+  margin-bottom: 10px;
+}
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.w3-button {
+  border-radius: 4px;
+  transition: background-color 0.3s ease,
+              color 0.3s ease,
+              transform 0.2s ease;
+}
+
+.w3-button:hover {
+  transform: translateY(-2px);
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+  border-top: 1px solid #222;
+  margin-top: 64px;
+  font-size: 14px;
+  color: #888;
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 32px;
+  }
+
+  section h2 {
+    font-size: 24px;
+  }
+
+  p, li {
+    font-size: 15px;
+  }
+}
+
+/* =====================================================
+   SEO / UX HELPERS
+===================================================== */
+
+/* Improve readability for long content */
+main {
+  max-width: 1000px;
+}
+
+/* Accessible focus styles */
+a:focus,
+button:focus {
+  outline: 2px solid #ffffff;
+  outline-offset: 3px;
+}
