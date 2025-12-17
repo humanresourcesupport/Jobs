@@ -1,6 +1,6 @@
 /**
- * hrsdesign - Professional Website Logic
- * Handles animations, navigation, and order processing
+ * hrsdesign - Professional Website Logic v2.1
+ * Handles animations, sidebar navigation, and order processing
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const scrollObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
+                // Modified to match the 'show' or 'visible' class in your CSS
+                entry.target.classList.add('show');
                 entry.target.classList.add('visible');
             }
         });
@@ -20,20 +22,26 @@ document.addEventListener('DOMContentLoaded', () => {
     fadeElements.forEach(el => scrollObserver.observe(el));
 
 
-    // 2. MOBILE MENU TOGGLE
-    // Handles the bars/hamburger menu for phone users
-    window.toggleMobileMenu = () => {
-        const menu = document.getElementById("mobileMenu");
-        if (menu.classList.contains("w3-show")) {
-            menu.classList.remove("w3-show");
-        } else {
-            menu.classList.add("w3-show");
+    // 2. SIDEBAR TOGGLE LOGIC (NEW)
+    // Controls the slide-out menu and rotating button interaction
+    window.toggleSidebar = () => {
+        const sidebar = document.getElementById("default-sidebar");
+        if (sidebar) {
+            sidebar.classList.toggle("open");
         }
     };
 
+    // Close sidebar automatically when a link is clicked
+    const sidebarLinks = document.querySelectorAll('.sidebar-link');
+    sidebarLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            const sidebar = document.getElementById("default-sidebar");
+            if (sidebar) sidebar.classList.remove("open");
+        });
+    });
+
 
     // 3. PRODUCT IMAGE MODAL
-    // Opens a full-screen view when a user clicks a product photo
     window.openImage = (src) => {
         const modal = document.getElementById("imgModal");
         const modalImg = document.getElementById("modalImg");
@@ -45,36 +53,43 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // 4. SMART ORDER LOGIC
-    // When a user clicks 'Buy Now', it auto-fills the form and scrolls down
+    // Added 'buyNow' support to match your recent HTML updates
+    window.buyNow = (name, price) => {
+        window.setProductWithPrice(name, price);
+    };
+
     window.setProductWithPrice = (name, price) => {
-        const productSelect = document.getElementById("orderProduct");
+        const productSelect = document.getElementById("orderProduct") || document.getElementById("prodInput");
         const priceInput = document.getElementById("orderPrice");
         const totalInput = document.getElementById("orderTotal");
 
-        if (productSelect) productSelect.value = name;
+        if (productSelect) productSelect.value = name + " - ₹" + price;
         if (priceInput) priceInput.value = "Price: ₹" + price;
         if (totalInput) totalInput.value = "Total Amount: ₹" + price;
 
         // Smooth scroll to the order section
-        document.getElementById("order").scrollIntoView({ behavior: 'smooth' });
+        const orderSection = document.getElementById("order") || document.getElementById("contact-faq");
+        if (orderSection) {
+            orderSection.scrollIntoView({ behavior: 'smooth' });
+        }
     };
 
 
     // 5. FORM SUCCESS FEEDBACK
-    // Shows a message before the user's email client opens
-    const orderForm = document.querySelector('form');
-    if (orderForm) {
-        orderForm.addEventListener('submit', () => {
+    const forms = document.querySelectorAll('form');
+    forms.forEach(form => {
+        form.addEventListener('submit', () => {
             const msg = document.getElementById("successMessage");
             if (msg) {
                 msg.style.display = "block";
                 setTimeout(() => { msg.style.display = "none"; }, 5000);
             }
         });
-    }
+    });
 
 });
 
 // 6. LOGO CONSOLE BRANDING
 console.log("%chrsdesign", "color: white; background: black; padding: 5px 10px; font-weight: bold; border-radius: 3px;");
 console.log("Status: One-Man Army Operational");
+console.log("Navigation: Rotating Hub Active");
