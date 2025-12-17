@@ -1,275 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta property="og:title" content="Human Resource Support | Creators, Jobs & Fashion">
-<meta property="og:description" content="The digital ecosystem bridging the gap between creative talent and industry opportunities. Join the Influencer Hub or shop the UNIT series.">
-<meta property="og:image" content="https://app.trickle.so/storage/public/images/usr_170c62a758000001/f4be4033-d379-466f-8e24-389532ab9dda.png">
-<meta property="og:url" content="https://humanresourcesupport.github.io/Jobs/">
-<meta name="twitter:card" content="summary_large_image">
-
-<link rel="icon" type="image/png" href="https://app.trickle.so/storage/public/images/usr_170c62a758000001/f4be4033-d379-466f-8e24-389532ab9dda.png">
-
-  <title>Human Resource Support | Jobs & Fashion</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Human Resource Support",
-    "url": "https://humanresourcesupport.github.io/Jobs/",
-    "logo": "https://app.trickle.so/storage/public/images/usr_170c62a758000001/f4be4033-d379-466f-8e24-389532ab9dda.png"
-  }
-  </script>
-
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <style>
-    body, h1, h2, h3, h4, h5, h6 { font-family: "Montserrat", sans-serif; }
-    .w3-sidebar { width: 120px; background: #111; }
-    #main { margin-left: 120px; background: #000; color: #ccc; }
+    <title>Human Resource Support | Creators, Jobs & Fashion</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    .product-card { background: #1a1a1a; border-radius: 8px; overflow: hidden; }
-    .btn-buy { background: #fff; color: #000; font-weight: bold; border: none; padding: 10px 20px; cursor: pointer; }
-    .btn-buy:hover { background: #ddd; }
-    
-    .fade-in { opacity: 0; transform: translateY(20px); transition: 0.8s ease-out; }
-    .fade-in.show { opacity: 1; transform: translateY(0); }
+    <meta property="og:title" content="Human Resource Support | Creators, Jobs & Fashion">
+    <meta property="og:description" content="The digital ecosystem bridging the gap between creative talent and industry opportunities.">
+    <meta property="og:image" content="https://app.trickle.so/storage/public/images/usr_170c62a758000001/f4be4033-d379-466f-8e24-389532ab9dda.png">
+    <link rel="icon" type="image/png" href="https://app.trickle.so/storage/public/images/usr_170c62a758000001/f4be4033-d379-466f-8e24-389532ab9dda.png">
 
-    input, select { margin-bottom: 15px; border-radius: 4px; }
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    @media only screen and (max-width: 600px) {
-      #main { margin-left: 0; }
-      .w3-sidebar { display: none; }
-      .mobile-nav { display: block !important; }
-    }
-  </style>
+    <style>
+        body, h1, h2, h3, h4, h5, h6 { font-family: "Montserrat", sans-serif; }
+        body { background-color: #000; color: #ccc; scroll-behavior: smooth; }
+        
+        /* Premium UI Elements */
+        .glass-card { 
+            background: rgba(255, 255, 255, 0.05); 
+            backdrop-filter: blur(10px); 
+            border: 1px solid rgba(255, 255, 255, 0.1); 
+            border-radius: 15px; padding: 30px; transition: 0.3s;
+        }
+        .glass-card:hover { border-color: #fff; transform: translateY(-5px); }
+        .btn-premium { 
+            background: transparent; color: #fff; border: 1px solid #fff; 
+            padding: 12px 24px; text-transform: uppercase; cursor: pointer; transition: 0.3s; text-decoration: none; display: inline-block;
+        }
+        .btn-premium:hover { background: #fff; color: #000; }
+        input, select, textarea { width: 100%; padding: 12px; margin-bottom: 15px; background: #111; border: 1px solid #333; color: #fff; }
+        
+        /* Animations */
+        .fade-in { opacity: 0; transform: translateY(20px); transition: 0.8s ease-out; }
+        .fade-in.show { opacity: 1; transform: translateY(0); }
+
+        /* Layout */
+        #main { margin-top: 60px; }
+        .img-container { overflow: hidden; border-radius: 8px; }
+        .img-container img { transition: 0.5s; }
+        .img-container:hover img { transform: scale(1.05); }
+    </style>
 </head>
-
 <body class="w3-black">
 
-<nav class="w3-sidebar w3-bar-block w3-small w3-center w3-hide-small">
-  <img src="https://app.trickle.so/storage/public/images/usr_170c62a758000001/f4be4033-d379-466f-8e24-389532ab9dda.png" style="width:100%" alt="Logo">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i><p>HOME</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-grey">
-    <i class="fa fa-user w3-xxlarge"></i><p>ABOUT</p>
-  </a>
-  <a href="#jobs" class="w3-bar-item w3-button w3-padding-large w3-hover-grey">
-    <i class="fa fa-briefcase w3-xxlarge"></i><p>JOBS</p>
-  </a>
-  <a href="#shop" class="w3-bar-item w3-button w3-padding-large w3-hover-grey">
-    <i class="fa fa-shopping-bag w3-xxlarge"></i><p>SHOP</p>
-  </a>
-</nav>
-
-<div class="w3-top w3-hide-large w3-hide-medium mobile-nav" style="display:none">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#jobs" class="w3-bar-item w3-button" style="width:25% !important">JOBS</a>
-    <a href="#shop" class="w3-bar-item w3-button" style="width:25% !important">SHOP</a>
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-padding w3-card" style="letter-spacing:2px;">
+    <a href="#home" class="w3-bar-item w3-button"><b>HRS</b></a>
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#partnerships" class="w3-bar-item w3-button">BRANDS</a>
+      <a href="#influencers" class="w3-bar-item w3-button">HUB</a>
+      <a href="#shop" class="w3-bar-item w3-button">SHOP</a>
+    </div>
   </div>
 </div>
 
-<div class="w3-padding-large" id="main">
-  
+<div id="main">
   <header class="w3-container w3-padding-64 w3-center fade-in" id="home">
     <h1 class="w3-jumbo">Human Resource Support</h1>
-    <p>Careers • Influencers • Fashion</p>
-    <img src="https://i.ibb.co/pB1ZxrtD/Drive-logic-hrs-cloth.jpg" alt="Hero Image" class="w3-image" width="600" style="border-radius: 10px; margin-top:20px">
+    <p class="w3-large">Careers • Influencers • Fashion</p>
+    <div class="w3-padding-32">
+        <a href="#shop" class="btn-premium">Shop UNIT 09</a>
+    </div>
   </header>
 
-  <section class="w3-content w3-justify w3-padding-64 fade-in" id="about">
-    <h2 class="w3-text-light-grey">About</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>Human Resource Support (HRS) is your bridge between digital influence and professional careers. We curate job opportunities for creators and drop exclusive, sustainable fashion units.</p>
-  </section>
-
-  <section class="w3-padding-64 w3-content fade-in" id="jobs">
-    <h2 class="w3-text-light-grey">Job Openings</h2>
-    <hr style="width:200px" class="w3-opacity">
-    
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half w3-margin-bottom">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Instagram Influencer</li>
-          <li class="w3-padding-16">Niche: Fashion</li>
-          <li class="w3-padding-16">Type: Contract</li>
-          <li class="w3-padding-16">Location: Remote / India</li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Apply Now</button>
-          </li>
-        </ul>
-      </div>
-      <div class="w3-half">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Social Media Manager</li>
-          <li class="w3-padding-16">Niche: Digital Assets</li>
-          <li class="w3-padding-16">Type: Full-time</li>
-          <li class="w3-padding-16">Location: Kalimpong</li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Apply Now</button>
-          </li>
-        </ul>
-      </div>
+  <section id="about" class="w3-padding-64 w3-content fade-in">
+    <div class="w3-center">
+        <h2 class="w3-xxlarge" style="letter-spacing: 8px;">ABOUT HRS</h2>
+        <hr style="width:100px; border: 2px solid #fff; margin: 20px auto;">
+    </div>
+    <div class="w3-row-padding">
+        <div class="w3-half w3-padding">
+            <div class="glass-card">
+                <h3>The Mission</h3>
+                <p>Human Resource Support (HRS) is a multi-dimensional platform bridging the gap between creative talent and industry opportunities.</p>
+            </div>
+        </div>
+        <div class="w3-half w3-padding">
+            <div class="glass-card">
+                <h3>The Vision</h3>
+                <p>Providing the infrastructure creators need to find meaningful work and for brands to find authentic voices.</p>
+            </div>
+        </div>
     </div>
   </section>
 
-  <section class="w3-padding-64 w3-content fade-in" id="shop">
-    <h2 class="w3-text-light-grey">The Shop</h2>
-    <hr style="width:200px" class="w3-opacity">
-    
-    <div class="w3-card-4 product-card w3-half">
-      <img src="https://i.ibb.co/pB1ZxrtD/Drive-logic-hrs-cloth.jpg" alt="Tee" style="width:100%">
-      <div class="w3-container w3-padding">
-        <h3>UNIT 09 // CRUISE CTRL Tee</h3>
-        <p class="w3-opacity">₹999</p>
-        <button onclick="document.getElementById('order-form').scrollIntoView();" class="btn-buy">Buy Now</button>
-      </div>
+  <section id="partnerships" class="w3-padding-64 w3-content fade-in">
+    <h2 class="w3-text-white w3-center">FOR BRANDS</h2>
+    <div class="glass-card w3-margin-top">
+        <p>Scale your impact. We connect brands with vetted fashion & tech influencers to drive authentic engagement.</p>
+        <a href="mailto:hrs.team.a@gmail.com?subject=Brand Inquiry" class="btn-premium">Partner With Us</a>
     </div>
   </section>
 
-  <section class="w3-padding-64 w3-content" id="order-form">
-    <h2 class="w3-text-light-grey">Place Your Order</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>Send us your details and we will reach out for payment via email.</p>
-
-    <form action="mailto:hrs.team.a@gmail.com" method="post" enctype="text/plain" class="w3-container w3-card-4 w3-padding-16 w3-dark-grey">
-      <label>Product</label>
-      <select class="w3-select w3-black w3-text-white" name="Product" required>
-        <option value="UNIT 09 Tee">UNIT 09 // CRUISE CTRL Tee - ₹999</option>
-      </select>
-
-      <label>Size</label>
-      <select class="w3-select w3-black w3-text-white" name="Size" required>
-        <option value="S">Small</option>
-        <option value="M">Medium</option>
-        <option value="L">Large</option>
-        <option value="XL">XL</option>
-      </select>
-
-      <input class="w3-input w3-black w3-text-white" type="text" placeholder="Full Name" name="Name" required>
-      <input class="w3-input w3-black w3-text-white" type="text" placeholder="Phone Number" name="Phone" required>
-      <input class="w3-input w3-black w3-text-white" type="text" placeholder="Shipping Address" name="Address" required>
-
-      <button class="w3-button w3-white w3-section" type="submit">
-        <i class="fa fa-paper-plane"></i> SEND ORDER EMAIL
-      </button>
-    </form>
+  <section id="influencers" class="w3-padding-64 w3-content fade-in">
+    <h2 class="w3-text-white w3-center">INFLUENCER HUB</h2>
+    <div class="glass-card">
+        <form action="mailto:hrs.team.a@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="Handle" placeholder="Instagram Handle (@)" required>
+            <input type="number" name="Followers" placeholder="Follower Count" required>
+            <button type="submit" class="btn-premium w3-block">Join Creator Network</button>
+        </form>
+    </div>
   </section>
 
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge w3-center">
-    <a href="https://www.instagram.com/human.resource.support" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-    <a href="https://www.linkedin.com/company/human-resource-support/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-    <p class="w3-medium">© 2025 Human Resource Support | Powered by hrsdesign</p>
+  <section id="shop" class="w3-padding-64 w3-content fade-in">
+    <h2 class="w3-text-white w3-center">RETAIL ARCHIVE</h2>
+    <div class="w3-row-padding">
+        <div class="w3-half w3-margin-bottom">
+            <div class="glass-card w3-padding-0">
+                <div class="img-container"><img src="https://i.ibb.co/pB1ZxrtD/Drive-logic-hrs-cloth.jpg" style="width:100%"></div>
+                <div class="w3-container w3-padding">
+                    <h4>UNIT 09 Tee</h4>
+                    <p>₹999</p>
+                    <button onclick="buyNow('UNIT 09 Tee', 999)" class="btn-premium w3-block">ORDER</button>
+                </div>
+            </div>
+        </div>
+        <div class="w3-half">
+            <div class="glass-card w3-padding-0">
+                <div class="img-container"><img src="https://i.ibb.co/fVzJsQxw/Summer-wear-hrs.jpg" style="width:100%"></div>
+                <div class="w3-container w3-padding">
+                    <h4>SUMMER CORE</h4>
+                    <p>₹1299</p>
+                    <button onclick="buyNow('Summer Core', 1299)" class="btn-premium w3-block">ORDER</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section id="order" class="w3-padding-64 w3-content fade-in">
+    <div class="glass-card">
+        <h3>Place Order</h3>
+        <form action="mailto:hrs.team.a@gmail.com" method="post" enctype="text/plain">
+            <input id="prodInput" type="text" name="Product" readonly>
+            <input type="text" name="Name" placeholder="Full Name" required>
+            <input type="text" name="Address" placeholder="Shipping Address" required>
+            <button type="submit" class="btn-premium">Confirm via Email</button>
+        </form>
+    </div>
+  </section>
+
+  <section id="newsletter" class="w3-padding-64 w3-center fade-in">
+    <div class="w3-content glass-card">
+        <h3>EARLY ACCESS</h3>
+        <p>Subscribe for future UNIT drops.</p>
+        <form action="mailto:hrs.team.a@gmail.com" method="post" enctype="text/plain">
+            <input type="email" name="Email" placeholder="Enter Email" style="max-width:400px">
+            <br>
+            <button type="submit" class="btn-premium">Subscribe</button>
+        </form>
+    </div>
+  </section>
+
+  <footer class="w3-padding-64 w3-center w3-opacity">
+    <div class="w3-xlarge w3-padding-32">
+      <a href="https://instagram.com/human.resource.support"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    </div>
+    <p>© 2025 Human Resource Support | Powered by hrsdesign</p>
   </footer>
-
 </div>
 
 <script>
-  // Animation on scroll
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('show');
-      }
-    });
-  });
+    // Simple Buy Logic
+    function buyNow(name, price) {
+        document.getElementById('prodInput').value = name + " - ₹" + price;
+        document.getElementById('order').scrollIntoView();
+    }
 
-  document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
+    // Scroll Animations
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('show'); });
+    });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 </script>
 
 </body>
 </html>
-<section id="influencer-hub" class="w3-padding-64 w3-black">
-  <div class="w3-content">
-    
-    <div class="fade-in w3-center">
-      <h2 class="w3-xxlarge" style="letter-spacing: 5px;">INFLUENCER HUB</h2>
-      <p class="w3-text-grey">Join the Human Resource Support Creator Network</p>
-      <hr style="width:100px; border: 2px solid #fff; margin: 20px auto;">
-    </div>
-
-    <div class="w3-row-padding w3-margin-top">
-      <div class="w3-half w3-padding-large fade-in">
-        <h3 class="w3-text-white">Why join HRS?</h3>
-        <p class="w3-text-grey">We connect authentic voices with brands that value sustainability and creative freedom.</p>
-        
-        <div class="w3-margin-top">
-          <div class="w3-padding-16">
-            <i class="fa fa-line-chart w3-xlarge w3-left w3-margin-right"></i>
-            <p><b>Brand Partnerships:</b> Get noticed by premium labels.</p>
-          </div>
-          <div class="w3-padding-16">
-            <i class="fa fa-camera w3-xlarge w3-left w3-margin-right"></i>
-            <p><b>Creative Growth:</b> Early access to our fashion drops.</p>
-          </div>
-          <div class="w3-padding-16">
-            <i class="fa fa-shield w3-xlarge w3-left w3-margin-right"></i>
-            <p><b>Direct Support:</b> No agencies, no middle-men.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="w3-half w3-padding-large fade-in">
-        <div class="glass-card" style="background: #111; padding: 30px; border: 1px solid #333;">
-          <form action="mailto:hrs.team.a@gmail.com" method="post" enctype="text/plain">
-            <h4 class="w3-center">REGISTER NOW</h4>
-            
-            <input type="text" name="Name" placeholder="Full Name" required>
-            
-            <input type="text" name="Instagram" placeholder="Instagram / Social Handle (@username)" required>
-            
-            <select name="Niche" required>
-              <option value="" disabled selected>Primary Niche</option>
-              <option value="Fashion">Fashion</option>
-              <option value="Lifestyle">Lifestyle</option>
-              <option value="Tech">Tech / Digital</option>
-              <option value="Sustainable">Sustainable Living</option>
-            </select>
-            
-            <input type="number" name="Followers" placeholder="Follower Count (Approx)" required>
-            
-            <textarea name="Message" placeholder="Tell us a bit about your style..." rows="3" style="width: 100%; background: #1a1a1a; color: white; border: 1px solid #333; padding: 15px;"></textarea>
-
-            <button type="submit" class="btn-premium w3-margin-top w3-block" style="border: 1px solid white; background: transparent; color: white; padding: 12px;">
-              SUBMIT APPLICATION
-            </button>
-          </form>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-<section id="newsletter" class="w3-padding-64 w3-black w3-center">
-  <div class="w3-content">
-    
-    <div class="glass-card w3-padding-48" style="background: linear-gradient(145deg, #0f0f0f, #1a1a1a); border: 1px solid #333;">
-      <h2 class="w3-xlarge" style="letter-spacing: 4px;">STAY IN THE LOOP</h2>
-      <p class="w3-text-grey w3-small">Be the first to know about new UNIT drops and creative job openings.</p>
-      
-      <div class="w3-row-padding w3-margin-top" style="max-width:600px; margin:auto;">
-        <form action="mailto:hrs.team.a@gmail.com" method="post" enctype="text/plain">
-          <div class="w3-col m8 s12">
-            <input type="email" name="Subscriber_Email" placeholder="Enter your email" required 
-                   style="border-radius: 0; background: #000; border: 1px solid #444; margin-bottom: 10px;">
-          </div>
-          <div class="w3-col m4 s12">
-            <button type="submit" class="btn-premium w3-block" style="padding: 11px;">SUBSCRIBE</button>
-          </div>
-        </form>
-      </div>
-      
-      <p class="w3-tiny w3-text-dark-grey w3-margin-top" style="letter-spacing: 1px;">
-        JOIN 500+ CREATORS IN THE HRS NETWORK.
-      </p>
-    </div>
-
-  </div>
-</section>
