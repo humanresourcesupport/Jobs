@@ -40,5 +40,5 @@ This repository is optimized for Google Search ranking using:
  * Brand: [hrsdesign]
  * Instagram: @human.resource.support
  * Email: hrs.team.a@gmail.com
-Developed as a digital-only operation by hrsdesign. All rights reserved © 2025.
+Developed as a digital-only operation by hrsdesign. 2025.
 
